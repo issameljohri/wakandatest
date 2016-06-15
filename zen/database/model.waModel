@@ -7,11 +7,11 @@
 				"panelColor": "#D8D8D8",
 				"panel": {
 					"isOpen": "true",
+					"pathVisible": true,
 					"position": {
 						"X": 25,
 						"Y": 20
-					},
-					"pathVisible": true
+					}
 				}
 			}
 		},
@@ -23,34 +23,31 @@
 	},
 	"dataClasses": [
 		{
-			"collectionName": "ItemCollection",
+			"name": "Item",
 			"className": "Item",
+			"collectionName": "ItemCollection",
+			"scope": "public",
 			"attributes": [
 				{
 					"name": "ID",
 					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
 					"type": "long",
-					"autosequence": "true",
-					"unique": "true",
-					"primKey": "true"
+					"primKey": true
 				},
 				{
 					"name": "name",
+					"kind": "storage",
 					"scope": "public",
-					"type": "string",
-					"kind": "storage"
+					"type": "string"
 				},
 				{
 					"name": "img",
+					"kind": "storage",
 					"scope": "public",
-					"type": "image",
-					"kind": "storage"
-				},
-				{
-					"name": "bl",
-					"scope": "public",
-					"type": "blob",
-					"kind": "storage"
+					"type": "image"
 				}
 			]
 		}
