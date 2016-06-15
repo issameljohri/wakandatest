@@ -1,0 +1,59 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Item": {
+				"panelColor": "#D8D8D8",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 25,
+						"Y": 20
+					},
+					"pathVisible": true
+				}
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0
+		}
+	},
+	"dataClasses": [
+		{
+			"collectionName": "ItemCollection",
+			"className": "Item",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"type": "long",
+					"autosequence": "true",
+					"unique": "true",
+					"primKey": "true"
+				},
+				{
+					"name": "name",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "img",
+					"scope": "public",
+					"type": "image",
+					"kind": "storage"
+				},
+				{
+					"name": "bl",
+					"scope": "public",
+					"type": "blob",
+					"kind": "storage"
+				}
+			]
+		}
+	],
+	"type": []
+}
